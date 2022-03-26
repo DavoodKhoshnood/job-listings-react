@@ -42,6 +42,7 @@
 .card {
   display: flex;
   flex-direction: row;
+  flex-grow: 100px;
   height: 200px;
   border-left: 8px solid #427677;
   box-shadow: 8px 15px 60px #7cdfe0;
@@ -50,24 +51,30 @@
 }
 
 .card img {
-  padding: 30px;
+  padding: 40px 28px 40px 52px;
 }
 
 .description {
-  padding: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 0.6rem;
+  flex-grow: 1;
 }
 
 .sk-1 {
   color: #427677;
   font-weight: bold;
-  margin: 5px;
+  font-size: 18px;
+  margin-right: 5px;
 }
 .sk-2 {
   background-color: #427677;
   color: #fff;
   padding: 4px 8px;
   border-radius: 15px;
-  font-size: 14px;
+  font-size: 16px;
   margin: 5px;
 }
 .sk-3 {
@@ -75,12 +82,35 @@
   color: #fff;
   padding: 4px 8px;
   border-radius: 15px;
-  font-size: 14px;
+  font-size: 16px;
   margin: 5px;
 }
-.sk-t {
+.sk-title {
   color: #000;
+  border-radius: 15px;
+  font-size: 22px;
+  font-weight: bold;
 }
+
 .bt {
-  color: #000;
+  color: #427677;
+  margin-right: 20px;
+}
+
+.lang {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  justify-content: flex-end;
+  flex-grow: 3;
+  padding: 0 80px;
+}
+
+.lang span {
+  background-color: #aee1e2;
+  color: #445858;
+  padding: 6px 10px;
+  border-radius: 5px;
+  margin-left: 30px;
 }
