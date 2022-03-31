@@ -14,32 +14,31 @@ function App() {
         <div className="main">
           {data.map((job) => (
             <div className="card">
-              {/* <LoadImage imgPath={cardImage} /> */}
               <LoadImage alt={job.alt} imgPath={job.logo} />
               <div className="description">
                 <p>
-                  <span className="sk-1">Photosnap</span>
-                  <span className="sk-2">NEW!</span>
-                  <span className="sk-3">FEATURED</span>
+                  <span className="sk-1">{job.company}</span>
+                  {job.new?<span className="sk-2">NEW!</span>:''}
+                  {job.featured?<span className="sk-3">FEATURED</span>:''}
                 </p>
                 <p>
-                  <span className="sk-title">Senior Frontend Developer</span>
+                  <span className="sk-title">{job.position}</span>
                   <br />
                 </p>
                 <p className="bt">
-                  <span className="bt">Id ago</span>
+                  <span className="bt">{job.postedAt}</span>
                   <span className="bt">・</span>
-                  <span className="bt">Full Time</span>
+                  <span className="bt">{job.contract}</span>
                   <span className="bt">・</span>
-                  <span className="bt">USA only</span>
+                  <span className="bt">{job.location}</span>
                 </p>
               </div>
               <div className="lang">
-                <span>Frontend</span>
-                <span>Senior</span>
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
+                <span>{job.role}</span>
+                <span>{job.level}</span>
+                {job.languages.map(lan =>
+                  <span>{lan}</span>
+                )}
               </div>
             </div>
           ))}
