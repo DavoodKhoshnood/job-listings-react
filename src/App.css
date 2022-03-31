@@ -61,6 +61,7 @@
   flex-direction: column;
   line-height: 0.6rem;
   flex-grow: 1;
+  min-width: 300px;
 }
 
 .sk-1 {
@@ -86,6 +87,7 @@
   margin: 5px;
 }
 .sk-title {
+  display: contents;
   color: #000;
   border-radius: 15px;
   font-size: 22px;
@@ -93,8 +95,10 @@
 }
 
 .bt {
+  display: contents;
   color: #427677;
   margin-right: 20px;
+
 }
 
 .lang {
@@ -105,6 +109,7 @@
   justify-content: flex-end;
   flex-grow: 3;
   padding: 0 80px;
+  flex-wrap: wrap;
 }
 
 .lang span {
