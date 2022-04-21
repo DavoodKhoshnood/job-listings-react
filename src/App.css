@@ -96,8 +96,8 @@ img {
 .language {
   display: flex;
   flex-direction: row;
-  justify-self: end;
-  justify-content: end;
+  justify-self: flex-end;
+  justify-content: flex-end;
   align-items: center;
   row-gap: 10px;
   column-gap: 10px;
@@ -108,7 +108,6 @@ img {
   color: #445858;
   padding: 6px 10px;
   border-radius: 5px;
-  /* margin-left: 18px;  */
 }
 
 span:hover{
